@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>destination</title>
+</head>
+<body>
+    <h1>JAPAN</h1>
+    <hr>
+    <h2>Why I Want to Go</h2>
+    <p>it seems like a <em>nice</em> place</p>
+
+    <h3>My Top 3 Activities</h3>
+    <ol>
+        <li>Going there</li>
+        <li>Being there</li>
+        <li>Going home</li>
+    
+    </ol>
+<small>Source:My Imagination</small>
+</body>
+</html>
