@@ -1,0 +1,42 @@
+
+body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+  background-image: url('imagesp2/topography\ pattern.png'), url('../imagesp2/plane-solid-full.svg');
+  background-position: top left, top left;
+  background-size: auto, 80px;
+}
+
+header{
+height: 40px;
+background-color: rgb(233, 219, 202);
+
+}
+
+nav {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  background-color: rgb(60, 80, 99);
+  padding: 10px;
+}
+
+nav a {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid white;
+  text-decoration: none;
+  color: rgb(243, 230, 230);
+}
+
+nav a:hover {
+  background-color: white;
+  color: black;
+}
+main{
+a {
+  color: black;
+
+}
