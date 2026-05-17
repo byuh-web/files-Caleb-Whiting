@@ -1,20 +1,23 @@
-
+/* ===== BODY ===== */
 body {
   text-align: center;
   margin: 0;
   padding: 0;
-
-  background-image: url('imagesp2/topography\ pattern.png'), url('../imagesp2/plane-solid-full.svg');
-  background-position: top left, top left;
-  background-size: auto, 80px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url('imagesp2/topography\ pattern.png');
+  background-repeat: repeat;
 }
 
-header{
-height: 40px;
-background-color: rgb(233, 219, 202);
-
+/* ===== HEADER ===== */
+header {
+  height: auto;
+  padding: 20px;
+  background-color: rgb(233, 219, 202);
 }
 
+/* ===== NAV ===== */
 nav {
   display: flex;
   gap: 10px;
@@ -35,8 +38,51 @@ nav a:hover {
   background-color: white;
   color: black;
 }
-main{
-a {
-  color: black;
 
+/* ===== MAIN ===== */
+main {
+  flex: 1;
+}
+
+main a {
+  color: black;
+}
+
+/* ===== UL LIST ===== */
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+ul li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 40px;
+  border: 2px solid black;
+  text-decoration: none;
+  color: black;
+  width: 200px;
+  background-color: rgba(233, 219, 202, 0.1);
+}
+
+ul li a::before {
+  content: url('imagesp2/plane_1.png');
+  display: inline-block;
+}
+
+ul li a:hover {
+  background-color: rgb(233, 219, 202);
+  color: black;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  margin-top: auto;
+  padding: 20px;
+  text-align: center;
 }
