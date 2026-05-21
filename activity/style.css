@@ -4,8 +4,30 @@ header {
     color: rgb(255, 255, 255);
 }
 
+nav {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  background-color: rgb(60, 80, 99);
+  padding: 10px;
+}
+
+nav a {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid white;
+  text-decoration: none;
+  color: rgb(243, 230, 230);
+}
+
+nav a:hover {
+  background-color: white;
+  color: black;
+}
+
+
 /* Mountains section */
-h1 {
+main {
     color: bisque;
     background-image: url("images/mountain.jpg");
     background-size: cover;       /* makes it scale */
