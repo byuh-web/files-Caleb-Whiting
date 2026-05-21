@@ -1,13 +1,26 @@
-
-header{
-    background-color: rgb(255, 255, 255);
-    color: rgb(101, 167, 58);
+/* color name */
+body {
+    background-color: lightblue;
 }
 
+/* hex color */
+header h1 {
+    color: #d22e2e;
+}
 
+/* parent child */
+nav a {
+    color: #3e3e3e;
+    text-decoration: none;
+}
 
+/* ID */
+#bigdog {
+    padding: 20px;
+    color: #beb804;
+}
 
-main{
-background-color: darkcyan;
-
+/* Class */
+.question {
+    color: rgb(149, 10, 10);
 }
