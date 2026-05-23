@@ -17,7 +17,7 @@
 }
 
 body {
-    ont-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
     background-color: var(--foam);
     color: var(--text);
      font-size: 18px;
