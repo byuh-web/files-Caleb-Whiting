@@ -1,42 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300;400&display=swap');
 
 * {
-    margin: 0;
-    padding:0;
-    box-sizing: 0
-;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --ocean:#1a5f7a;
-    --sand: #e8d5b0;
-    --foam: #f4f0e8;
-    --dark: #1a2a2f;
-    --accent: #c8873a;
-    --text: #2c3e40;
+  --ocean: #1a5f7a;
+  --sand: #e8d5b0;
+  --foam: #f4f0e8;
+  --dark: #1a2a2f;
+  --accent: #c8873a;
+  --text: #2c3e40;
 }
 
 body {
-    font-family: 'Lato', sans-serif;
-    background-color: var(--foam);
-    color: var(--text);
-     font-size: 18px;
-     line-height: 1.7;
-    
+  font-family: 'Lato', sans-serif;
+  background-color: var(--foam);
+  color: var(--text);
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 header {
-    background-color: var(--ocean);
-    padding: 3rem 2rem;
-    font-size: 2.8rem;
-    color:  var(--sand);
-
+  background-color: var(--ocean);
+  padding: 3rem 2rem;
+  text-align: center;
 }
 
-header h1{
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 2.8rem;
-    color: var(--sand);
+header h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.8rem;
+  color: var(--sand);
 }
 
 nav {
@@ -45,8 +41,8 @@ nav {
   text-align: center;
 }
 
-nav a{
- color: var(--sand);
+nav a {
+  color: var(--sand);
   text-decoration: none;
   font-size: 0.95rem;
   text-transform: uppercase;
@@ -58,7 +54,12 @@ nav a{
 }
 
 nav a:hover {
-    color: white;
+  color: white;
+  border-bottom-color: var(--accent);
+}
+
+nav a:visited {
+  color: #b8c8cc;
 }
 
 main {
@@ -66,7 +67,6 @@ main {
   margin: 3rem auto;
   padding: 0 2rem;
 }
-
 
 h2 {
   font-size: 2rem;
@@ -101,4 +101,8 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+footer a:visited {
+  color: #d4a06a;
 }
