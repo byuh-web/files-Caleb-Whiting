@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: 0
+;
+}
+
+:root {
+    --ocean:#1a5f7a;
+    --sand: #e8d5b0;
+    --foam: #f4f0e8;
+    --dark: #1a2a2f;
+    --accent: #c8873a;
+    --text: #2c3e40;
+}
+
+body {
+    ont-family: 'Lato', sans-serif;
+    background-color: var(--foam);
+    color: var(--text);
+     font-size: 18px;
+     line-height: 1.7;
+    
+}
+
+header {
+    background-color: var(--ocean);
+    padding: 3rem 2rem;
+    font-size: 2.8rem;
+    color:  var(--sand);
+
+}
+
+header h1{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.8rem;
+    color: var(--sand);
+}
+
+nav {
+  background-color: var(--dark);
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+nav a{
+ color: var(--sand);
+  text-decoration: none;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 1.5rem;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+nav a:hover {
+    color: white;
+}
+
+main {
+  max-width: 760px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+}
+
+
+h2 {
+  font-size: 2rem;
+  color: var(--ocean);
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--sand);
+  padding-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  color: var(--dark);
+  margin: 2.5rem 0 0.6rem;
+  padding-left: 1rem;
+  border-left: 4px solid var(--accent);
+}
+
+footer {
+  background-color: var(--dark);
+  color: var(--sand);
+  text-align: center;
+  padding: 1.5rem 2rem;
+  margin-top: 4rem;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: var(--accent);
+  text-decoration: none;
+  margin-left: 1.5rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
