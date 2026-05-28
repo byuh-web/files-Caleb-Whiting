@@ -1,0 +1,14 @@
+.card{
+    background-color: blue;
+    width: 400px;
+    height: 200px;
+    padding:10px 30px 10px 30px ;
+    border: 3px solid navy;   
+    box-sizing:border-box;  /* it is 400 px because the that is the width of the box. boarder box will make the boarder around whatever size box you set*/
+   
+  
+    margin: 0 auto;
+    margin-top: 24px;
+    margin-bottom:24px;
+    
+}
