@@ -8,6 +8,7 @@ font-family:'Crimson Text', serif;
 
 }
 figure.float-right {/*floats the image right*/
+	
   float: right;
   width: fit-content;  /* shrinks to match the image width */
   margin: 0 0 1rem 1.5rem;
