@@ -25,7 +25,7 @@ figure.float-right {/*floats the image right*/
 
 }
 body{/*skyrim background image*/
-	background-image: url("/projects/photos/skyrim.jpg");
+	background-image: url("../photos/skyrim.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
