@@ -1,0 +1,41 @@
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding:auto;
+    color: rgb(62, 187, 122);
+    gap: 15px;
+
+}
+
+
+
+.special{
+grid-column: span 15;
+background-color: brown;
+}
+.menu div:nth-child(2){
+    background-color: rgb(11, 117, 55);
+    
+}
+
+.menu div:nth-child(3){
+    background-color: rgb(27, 64, 144);
+   
+}
+
+.menu div:nth-child(4){
+    background-color: rgb(114, 44, 91);
+    
+}
+.menu div:nth-child(5){
+    background-color: rgb(32, 2, 255);
+  
+}
+
+.menu div:nth-child(6){
+    background-color: rgb(253, 1, 1);
+
+}
+
+
+
