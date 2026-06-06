@@ -1,0 +1,321 @@
+/* =============================================
+   TECH BLOG – Flexbox Activity Starter CSS
+   
+   YOUR TASKS are marked with 👉
+   Everything else is already done for you.
+   ============================================= */
+
+/* --- Base Reset & Body --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, serif;
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+/* --- NAVBAR ---
+   The HTML structure is:
+   <nav class="navbar">
+     <div class="logo">...</div>
+     <ul class="nav-links">...</ul>
+   </nav>
+*/
+
+.navbar {
+  background-color: #1a1a2e;
+  padding: 0 2rem;
+  height: 64px;
+  display: flex;
+
+ 
+  /* 👉 TASK 1: Turn the navbar into a flex container */
+
+ display: flex;
+
+
+  /* 👉 TASK 2: Vertically center the logo and links
+     Hint: think about the CROSS axis */
+ 
+align-items: center;
+  /* 👉 TASK 3: Push the logo LEFT and the links RIGHT
+     Hint: there's a value that puts space BETWEEN items */
+     justify-content: space-between;
+ 
+}
+
+.logo {
+  color: #e94560;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+
+  /* 👉 TASK 4: Make the nav links sit in a horizontal row
+     (They are inside a <ul> — make the ul a flex container) */
+ display: flex;
+
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.nav-links a:hover {
+  color: #e94560;
+}
+
+/* --- HERO SECTION (already done!) --- */
+.hero {
+  background-color: #1a1a2e;
+  color: white;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #e94560;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+/* --- CARD SECTION ---
+   The HTML structure is:
+   <main class="card-section">
+     <article class="card card-featured">...</article>
+     <article class="card">...</article>
+     <article class="card">...</article>
+   </main>
+*/
+
+.card-section {
+  max-width: 1200px;
+  margin: 2.5rem auto;
+  padding: 0 2rem;
+
+  /* 👉 TASK 5: Turn the card section into a flex container */
+ display: flex;
+
+  /* 👉 TASK 6: Add some space between the cards
+     Hint: use the gap property OR a justify-content value */
+gap: 1.5rem;
+justify-content: flex-start;
+  /* 👉 TASK 7: Make sure cards align at the top
+     (What align-items value keeps them from stretching?) */
+    
+     align-items: flex-start;
+ 
+}
+
+/* --- INDIVIDUAL CARD (already done!) --- */
+.card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* --- TASK 8 ---
+   👉 TASK 8: Make the .card-featured grow
+   to be wider than the other two cards.
+   Hint: use flex-grow on both .card and .card-featured
+   with different values so featured gets more space.
+*/
+
+.card {
+  /* your flex-grow value here */
+  flex-grow: 1;
+}
+
+.card-featured {
+  /* your flex-grow value here */
+  flex-grow: 2;
+}
+
+/* --- CARD IMAGE AREAS (already done!) --- */
+.card-img {
+  width: 100%;
+  height: 180px;
+}
+
+.img-featured { background-color: #e94560; }
+.img-2        { background-color: #0f3460; }
+.img-3        { background-color: #16213e; }
+
+/* --- CARD BODY (already done!) --- */
+.card-body {
+  padding: 1.25rem;
+}
+
+.tag {
+  display: inline-block;
+  background: #e94560;
+  color: white;
+  font-size: 0.7rem;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-bottom: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.card-body h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.card-body p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  background: #1a1a2e;
+  color: white;
+  text-decoration: none;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  font-size: 0.85rem;
+}
+
+.btn:hover {
+  background: #e94560;
+}
+
+/* =============================================
+   NEW TASKS BELOW
+   ============================================= */
+
+/* --- TOPICS SECTION (already done!) --- */
+.topics {
+  max-width: 1200px;
+  margin: 0 auto 2.5rem;
+  padding: 0 2rem;
+}
+
+.topics-heading {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #777;
+  margin-bottom: 0.8rem;
+}
+
+.tag-row {
+  /* 👉 TASK 9: Turn this into a flex container so the
+     topic tags line up in a row. Then allow the tags to
+     WRAP onto a new line when they run out of space.
+     Hint: you need TWO properties here — one to activate
+     flex, and one to allow wrapping. */
+ 
+display:flex;
+flex-wrap: wrap;
+ 
+}
+
+.topic-tag {
+  background: white;
+  border: 1px solid #ddd;
+  color: #333;
+  font-size: 0.8rem;
+  padding: 0.3rem 0.85rem;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.topic-tag:hover {
+  background: #e94560;
+  color: white;
+  border-color: #e94560;
+  cursor: pointer;
+}
+
+/* --- AUTHOR SECTION (already done!) --- */
+.author-section {
+  max-width: 480px;
+  margin: 0 auto 3rem;
+  padding: 0 2rem;
+}
+
+.author-heading {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #777;
+  margin-bottom: 0.8rem;
+}
+
+.author-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+
+  /* 👉 TASK 10: Make the author card a flex container,
+     and stack its children VERTICALLY (column direction).
+     The avatar, text, and button should be on top of
+     each other, not side by side. */
+ 
+
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.author-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: #0f3460;
+  /* already done — don't change this */
+}
+
+.author-info h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.author-info p {
+  font-size: 0.85rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.btn-follow {
+  background: #e94560;
+  /* 👉 TASK 11: Make ONLY this button align to the RIGHT
+     side of the card, even though everything else is
+     left-aligned.
+     Hint: don't change the container — use a property
+     that targets this single item on the cross axis. */
+ align-self: flex-end;
+}
+
+/* --- FOOTER (already done!) --- */
+.footer {
+  background-color: #1a1a2e;
+  color: #aaa;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.85rem;
+  margin-top: 3rem;
+}
