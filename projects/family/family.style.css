@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Lato:wght@400;700&display=swap');
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+}
+
+header{
+    background-color: rgb(250, 228, 172);
+    color: rgb(27, 82, 97);
+    padding: 1rem;
+}
+
+nav{
+    background-color: rgb(27, 82, 97);
+    display: flex;
+    justify-content: space-evenly;
+    padding: .75rem;
+}
+
+nav a {
+    color:rgb(250, 228, 172) ;
+    text-decoration: none
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+.container{
+    display:flex
+}
+
+.sidebar {
+    width: 25%;
+    padding:1rem;
+    background-color: rgb(250, 228, 172);
+}
+.sidebar img {
+    width: 100%;
+}
+.sidebar ul{
+    list-style-type: none;
+    padding:0;
+}
+
+.sidebar li {
+    margin-bottom:1rem;
+
+}
+
+main{
+    width: 75%;
+    display: flex;
+    flex-wrap:wrap;
+    gap: 1rem;
+    padding:1rem;
+}
+
+article{
+    flex: 1;
+    min-width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+article img{
+    width: 100%;
+    height
+
+}
