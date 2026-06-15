@@ -64,6 +64,7 @@ main{
 article{
     flex: 1;
     min-width: 250px;
+    max-width: calc(50%-0.5rem);
     border: 1px solid #ddd;
     border-radius: 6px;
     padding: 1rem;
