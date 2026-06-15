@@ -71,6 +71,28 @@ article{
 
 article img{
     width: 100%;
-    height
+    height: 200px;
+    object-fit: cover;
+}
+@media (max-width:600px){
+    .container{
+        flex-direction:column-reverse;
 
+    }
+    .sidebar, main{
+        width: 100%;
+    }
+    main, nav{
+        align-items: center;
+        gap: 0.5rem;
+    }
+    nav{
+        align-items: center;
+        gap: 0.5;
+    }
+}
+@media print {
+    nav{
+        display: none;
+    }
 }
