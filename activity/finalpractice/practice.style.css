@@ -1,0 +1,24 @@
+
+
+
+nav a{
+
+    padding: 15px;
+    margin: 5px;
+    border: 2px;
+    border-style: solid;
+    border-radius: rgb(11, 39, 30);
+
+
+}
+nav a:hover{
+    color: rgb(255, 255, 255);
+}
+
+div{
+    background-color: aqua;
+    margin: 50px;
+}
+#foot{
+    background-color: purple;
+}
