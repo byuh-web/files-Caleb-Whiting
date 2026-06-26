@@ -1,0 +1,31 @@
+:root{
+    padding: 0;
+
+}
+
+body{
+
+    background-color: rgb(26, 25, 25);
+    margin:0;
+    padding: 0;
+}
+
+header{
+    padding: 20px;
+    color: antiquewhite;
+    background-color: rgb(165, 60, 60);
+
+}
+
+nav{
+background-color: antiquewhite;
+padding: 15px;
+}
+
+nav a{
+    color: rgb(0, 0, 0);
+}
+
+main{
+    color: antiquewhite;
+}
