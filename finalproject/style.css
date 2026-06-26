@@ -8,24 +8,65 @@ body{
     background-color: rgb(26, 25, 25);
     margin:0;
     padding: 0;
+    text-align: center;
+    overflow: hidden ;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+
 }
 
 header{
     padding: 20px;
     color: antiquewhite;
     background-color: rgb(165, 60, 60);
+    text-align: center;
 
 }
 
 nav{
-background-color: antiquewhite;
-padding: 15px;
+    background-color: antiquewhite;
+    padding: 15px;
+    display: flex;
+    justify-content:space-between;
+
+
 }
 
 nav a{
     color: rgb(0, 0, 0);
+    text-decoration: solid;
+}
+nav a:hover{
+    text-decoration: underline;
 }
 
 main{
     color: antiquewhite;
+    
+}
+main a{
+    color: antiquewhite;
+}
+
+footer{
+    color: antiquewhite;
+}
+@media (max-width:786px ){
+    body{
+        max-width: 100%;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+@media (max-width:480px ){
+    body{
+        max-width: 100%;
+    }
+    nav{
+        flex-direction: column;
+    }
 }
